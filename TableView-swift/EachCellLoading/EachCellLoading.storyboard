@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2at-lg-Pun">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Each Cell Loading View Controller-->
+        <scene sceneID="5Sp-2g-yED">
+            <objects>
+                <viewController id="2at-lg-Pun" customClass="EachCellLoadingViewController" customModule="TableView_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y7f-HD-Zc9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieq-fM-2vo">
+                                <rect key="frame" x="16" y="52" width="382" height="30"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshButtonPressed:" destination="2at-lg-Pun" eventType="touchUpInside" id="Wzn-HD-ySM"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dh9-yb-EGQ">
+                                <rect key="frame" x="0.0" y="98" width="414" height="764"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VAZ-lS-PN3" firstAttribute="trailing" secondItem="ieq-fM-2vo" secondAttribute="trailing" constant="16" id="2xy-GB-Qx6"/>
+                            <constraint firstItem="dh9-yb-EGQ" firstAttribute="leading" secondItem="VAZ-lS-PN3" secondAttribute="leading" id="C67-Cc-eJy"/>
+                            <constraint firstItem="ieq-fM-2vo" firstAttribute="leading" secondItem="VAZ-lS-PN3" secondAttribute="leading" constant="16" id="Du6-JT-JcL"/>
+                            <constraint firstItem="ieq-fM-2vo" firstAttribute="top" secondItem="VAZ-lS-PN3" secondAttribute="top" constant="8" id="Dvj-td-b6z"/>
+                            <constraint firstItem="VAZ-lS-PN3" firstAttribute="trailing" secondItem="dh9-yb-EGQ" secondAttribute="trailing" id="NKE-nr-t2i"/>
+                            <constraint firstItem="dh9-yb-EGQ" firstAttribute="top" secondItem="ieq-fM-2vo" secondAttribute="bottom" constant="16" id="d77-ip-my2"/>
+                            <constraint firstItem="VAZ-lS-PN3" firstAttribute="bottom" secondItem="dh9-yb-EGQ" secondAttribute="bottom" id="rUe-qz-5lU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VAZ-lS-PN3"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="dh9-yb-EGQ" id="Puk-iP-anU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8I-kx-OjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="-252"/>
+        </scene>
+    </scenes>
+</document>
