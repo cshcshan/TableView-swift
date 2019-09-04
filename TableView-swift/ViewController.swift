@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tableView: UITableView!
     
-    private var data = ["Moving Cells", "AutoLayout", "Display Cell Animation", "Each Cell's Loading"]
+    private var data = ["Moving Cells", "AutoLayout", "Display Cell Animation", "Each Cell's Loading", "Cell in view"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +46,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             performSegue(withIdentifier: "DisplayCellsAnimationSegue", sender: nil)
         case 3:
             performSegue(withIdentifier: "EachCellsLoadingSegue", sender: nil)
+        case 4:
+            performSegue(withIdentifier: "CellInViewSegue", sender: nil)
         default: break
         }
     }

@@ -55,6 +55,7 @@
                         <segue destination="N5N-0O-CAH" kind="show" identifier="AutoLayoutSegue" id="dTo-uf-Adw"/>
                         <segue destination="ZYb-hg-MQW" kind="show" identifier="DisplayCellsAnimationSegue" id="lBx-GP-GNj"/>
                         <segue destination="l3e-2X-l8m" kind="show" identifier="EachCellsLoadingSegue" id="Fxg-ro-HdX"/>
+                        <segue destination="1W1-gr-tGy" kind="show" identifier="CellInViewSegue" id="rbX-80-N90"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlD-S5-tsz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -83,7 +84,7 @@
                 <viewControllerPlaceholder storyboardName="DisplayCellsAnimation" id="ZYb-hg-MQW" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Su-VH-xZL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="128"/>
+            <point key="canvasLocation" x="954" y="41"/>
         </scene>
         <!--EachCellLoading-->
         <scene sceneID="P2B-fU-Mxg">
@@ -91,7 +92,15 @@
                 <viewControllerPlaceholder storyboardName="EachCellLoading" id="l3e-2X-l8m" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNe-EV-ozA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926" y="210"/>
+            <point key="canvasLocation" x="926" y="121"/>
+        </scene>
+        <!--CellInView-->
+        <scene sceneID="8CU-Na-s91">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CellInView" id="1W1-gr-tGy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTg-nV-ZfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896" y="217"/>
         </scene>
     </scenes>
 </document>
